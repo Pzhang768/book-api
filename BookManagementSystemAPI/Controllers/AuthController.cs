@@ -24,7 +24,7 @@ namespace BookManagementSystemAPI.Controllers
         public async Task<IActionResult> Register([FromBody] RegisterRequestDto registerRequest)
         {
             string token = await _authService.Register(registerRequest);
-            System.Console.WriteLine("hello");
+            System.Console.WriteLine("hello world");
             return StatusCode(201, token);
         }
     }
